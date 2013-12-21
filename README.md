@@ -1,4 +1,7 @@
-orchid
-======
+[project ORCHID]
+================
 
-Dat README
+Code Style
+
+class public members - <name>
+class private members - m_<NAME>

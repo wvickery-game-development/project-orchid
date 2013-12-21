@@ -4,38 +4,54 @@ using System.Collections.Generic;
 
 public class Unit : Entity {
 
+    //Sound used when 
     public AudioClip m_shootSound;
 
+    //the point that the unit has come from and the point it is going too
     private Point m_source, m_destination;
+
+    //TODO REMOVE FLAGS
+    //flag used to tell if the unit has reached its destination and is on its return trip
     private bool m_reachedDestination = false;
 
+    //Entitiy it is currently attacking
     private Entity m_attackTarget;
     
+    //speed of the unit as it moves
     public float velocity = 100; // pixels per second
 
-    //private GameObject m_range;
+    //distanace that the unit can fire on something else
     public float range = 10;
 
+    //type of munition the unit has
     private Munition m_munition;
-    private LineRenderer m_lineRenderer;
 
+    //TODO maybe use
+    //timer used to determine the frequency it attacks
     private Timer m_attackTimer;
 
+    //destination property
     public Point destination
     {
         get { return m_destination; }
     }
+
+    //source propterty
     public Point source
     {
         get { return m_source; }
     }
 
+    //Awake function
+    //runs my initialization fucntions
     void Awake() {
         InitBody();
         InitRange();
     }
 
+    //TODO try and move all things from Start() that can be in Awake()
     //Use this for initialization
+    //runs after awake and also does initialization?
     new void Start()
     {
         base.Start();
@@ -45,12 +61,12 @@ public class Unit : Entity {
         }
 
         m_munition = gameObject.GetComponent<Munition>();
-        m_lineRenderer = gameObject.AddComponent<LineRenderer>();
         
         m_attackTimer = new Timer();
         m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
     }
 
+    //initializes the rigid body and collider based on the settings provided
     void InitBody(){
         Rigidbody2D rigidBody2D = gameObject.AddComponent<Rigidbody2D>();
         rigidBody2D.isKinematic = false;
@@ -62,6 +78,7 @@ public class Unit : Entity {
         colliderTemp.isTrigger = true;
     }
 
+    //initializes the collider used to detect attackable objects
     void InitRange(){
         //m_range = new GameObject();
         //m_range.name = "UnitRange";
@@ -72,7 +89,8 @@ public class Unit : Entity {
         colliderTemp.isTrigger = true;
     }
     
-    // Update is called once per frame
+    //Update function is called once per frame
+    //checks if is attacking a target.
     new void Update ()
     {
         base.Update();
@@ -89,6 +107,8 @@ public class Unit : Entity {
         }
     }
 
+    //TODO can this be done in a better way? getters and setters are evil
+    //sets the the to and from for the unit, and sends it in the direction
     public void SetSourceAndTarget(Point source, Point target)
     {
         // Move the unit to the source
@@ -105,6 +125,7 @@ public class Unit : Entity {
         transform.position = transform.position + new Vector3(0 , 0, -2);
     }
 
+    //checks if the entity detected is attackable based on this unit
     bool CanAttack(Entity target){
         if(target.m_owner == this.m_owner || target.dead){
             return false;
@@ -145,15 +166,19 @@ public class Unit : Entity {
         }
     }
 
+    //TODO shouldn't exist, why does this exist
+    //Calls the take damage funciton of entity
     public new void TakeDamage(int damage){
         base.TakeDamage(damage);
     }
 
+    //called when the unit reaches the point(location) that is its original destination
     public void ReachedDestination(){
         if(type == Type.icbm){
             Explode();      
         }
         else{
+            //TODO maybe put this in update 
             gameObject.GetComponent<Rigidbody2D>().velocity *= -1;
             transform.LookAt(source.gameObject.transform, transform.up);
             transform.Rotate(0 , -90, 0);
@@ -162,6 +187,7 @@ public class Unit : Entity {
         }
     }
 
+    //called to give money back to player and destroy game object.
     public void FinishMission(){
         if(m_reachedDestination){
             source.UnitReturned(m_money);
@@ -169,6 +195,7 @@ public class Unit : Entity {
         }
     }
 
+    //mainly used to detect if attackable item is in range
     //OnTriggerEnter is called when the Collider other enters the trigger.
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -186,6 +213,8 @@ public class Unit : Entity {
         }
     }
 
+    //TODO this is a dangerous, method. un-verified behaviour.
+    //typically called to end the attack when colliders exit
     //OnTriggerEnter is called when the Collider other enters the trigger.
     void OnTriggerExit2D(Collider2D other)
     {
