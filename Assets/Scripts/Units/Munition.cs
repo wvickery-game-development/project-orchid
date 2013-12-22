@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//TODO Delete this class.
+//TODO put this into inherited units (for fighter ect)
 public class Munition : MonoBehaviour {
 
     public Color colour = Color.red;

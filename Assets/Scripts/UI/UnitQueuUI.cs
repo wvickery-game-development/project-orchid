@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class UnitQueuUI : MonoBehaviour {
 
+    //Font for the text
     public tk2dFontData m_font = State.instance.defaultFont;
     public GameObject unitPrefab;
     private GameObject m_titleText;

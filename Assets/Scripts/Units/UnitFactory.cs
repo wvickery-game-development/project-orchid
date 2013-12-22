@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//TODO does this need to be a 
 public class UnitFactory : MonoBehaviour {
 	
 	public int m_fighterLevel = 0;
@@ -9,6 +10,7 @@ public class UnitFactory : MonoBehaviour {
 	
     public Owner owner;
 
+    //These are all prefabs
 	public GameObject fighterSmall;
 	public GameObject fighterMedium;
 	public GameObject fighterBig;
