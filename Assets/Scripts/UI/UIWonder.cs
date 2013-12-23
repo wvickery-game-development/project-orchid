@@ -30,7 +30,7 @@ public class UIWonder : PointUI {
 		}
 		
 		if(IsOpen()) {
-			if(m_point.m_owner == Owner.ENEMY) {
+			if(m_point.m_owner == Faction.ENEMY) {
 				tk2dTextMesh mesh = m_moneyText.GetComponent<tk2dTextMesh>();
 				mesh.text = "Reward $" + m_point.money;
 				mesh.Commit();

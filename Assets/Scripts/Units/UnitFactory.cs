@@ -8,7 +8,7 @@ public class UnitFactory : MonoBehaviour {
 	public int m_bomberLevel = 0;
 	public int m_icbmLevel = 0;
 	
-    public Owner owner;
+    public Faction owner;
 
     //These are all prefabs
 	public GameObject fighterSmall;
