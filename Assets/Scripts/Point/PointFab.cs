@@ -7,7 +7,7 @@ public class PointFab : Point {
 		m_hp = 200;
 		m_money = 10;
 		
-		GetComponent<tk2dSprite>().color = m_owner == Owner.PLAYER ? Color.blue : Color.red;
+		GetComponent<tk2dSprite>().color = m_owner == Faction.PLAYER ? Color.blue : Color.red;
 	}
 	
 	new void Update() {

@@ -10,7 +10,7 @@ public class Entity : MonoBehaviour {
 	/// <summary>
 	/// The owner of this point
 	/// </summary>
-	public Owner m_owner = Owner.ENEMY;
+	public Faction m_owner = Faction.ENEMY;
 	
 	/// <summary>
 	/// The amount of HP that this point has
@@ -96,7 +96,7 @@ public class Entity : MonoBehaviour {
 			m_rewardGiven = true;
 			
 			AudioSource.PlayClipAtPoint(m_destructionSound, this.transform.position,0.6f);
-			if(m_owner == Owner.PLAYER) {
+			if(m_owner == Faction.PLAYER) {
 				State.EnemyMoney += m_money;
             } else {
 				State.PlayerMoney += m_money;

@@ -145,19 +145,19 @@ public class State : MonoBehaviour {
 	
 	public void RegisterPoint(Point p) {
 		if(p is PointCity) {
-			if(p.m_owner == Owner.PLAYER) {
+			if(p.m_owner == Faction.PLAYER) {
 				m_playerCities.Add(p as PointCity);
 			} else {
 				m_enemyCities.Add(p as PointCity);
 			}
 		} else if(p is PointFab) {
-			if(p.m_owner == Owner.PLAYER) {
+			if(p.m_owner == Faction.PLAYER) {
 				m_playerFabs.Add(p as PointFab);
 			} else {
 				m_enemyFabs.Add(p as PointFab);
 			}
 		} else if(p is PointWonder) {
-			if(p.m_owner == Owner.PLAYER) {
+			if(p.m_owner == Faction.PLAYER) {
 				m_playerWonders.Add(p as PointWonder);
 			} else {
 				m_enemyWonders.Add(p as PointWonder);

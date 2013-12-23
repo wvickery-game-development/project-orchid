@@ -80,10 +80,6 @@ public class Unit : Entity {
 
     //initializes the collider used to detect attackable objects
     void InitRange(){
-        //m_range = new GameObject();
-        //m_range.name = "UnitRange";
-        //m_range.transform.position = transform.position;
-        //m_range.transform.parent = transform;
         CircleCollider2D colliderTemp = gameObject.AddComponent<CircleCollider2D>();
         colliderTemp.radius = range;
         colliderTemp.isTrigger = true;
