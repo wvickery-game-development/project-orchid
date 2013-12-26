@@ -2,65 +2,50 @@
 using System.Collections;
 
 public class Entity : MonoBehaviour {
-    public enum Type {bomber, fighter, icbm, point};
 	
+    /// ----------------------------
+    /// MEMBER VARIABLES
+    /// ----------------------------
+
     public AudioClip m_destructionSound;
     public ExplosionGroup m_explosion;
 
-	/// <summary>
-	/// The owner of this point
-	/// </summary>
 	public Faction m_owner = Faction.ENEMY;
-	
-	/// <summary>
-	/// The amount of HP that this point has
-	/// </summary>
-	public int m_hp;
-	
-	/// <summary>
-	/// The amount of damage that this point has recieved
-	/// </summary>
-	public int m_damage;
-
-    /// <summary>
-	/// The amount of money that this point should reward the attacker when destroyed
-	/// </summary>
-	public int m_money;
-
-	private bool m_rewardGiven = false;
-
-    /// <summary>
-	/// The type of the entity
-	/// </summary>
+	public int m_hp, m_damage, m_reward;
+	private bool m_rewardGiven = false; //TODO this should go
+    public enum Type {bomber, fighter, icbm, point};
     public Type m_type;
 
     protected MoneyEffect m_moneyEffect;
     protected HealthBar m_healthBar;
 	
+    /// ----------------------------
+    /// PROPERTIES
+    /// ----------------------------
+
 	public int hp {
 		get { return m_hp; }
-	}
-	
+	}	
 	public int damage {
 		get { return m_damage; }
 		set { m_damage = value; }
-	}
-	
+	}	
 	public bool dead {
 		get { return m_damage >= m_hp; }
 	}
-
     public Type type {
 		get { return m_type; }
 	}
-
     public int money {
-		get { return m_money; }
-	}
-	
+		get { return m_reward; }
+	}	
     public Vector2 position {
         get { return transform.position; }
     }
+
+    /// ----------------------------
+    /// METHODS
+    /// ----------------------------
 
     public IEnumerator HitEffect()
     {
@@ -97,10 +82,10 @@ public class Entity : MonoBehaviour {
 			
 			AudioSource.PlayClipAtPoint(m_destructionSound, this.transform.position,0.6f);
 			if(m_owner == Faction.PLAYER) {
-				State.EnemyMoney += m_money;
+				State.EnemyMoney += m_reward;
             } else {
-				State.PlayerMoney += m_money;
-				m_moneyEffect.StartEffect(m_money);
+				State.PlayerMoney += m_reward;
+				m_moneyEffect.StartEffect(m_reward);
 			}
 			
 			// Explosion!

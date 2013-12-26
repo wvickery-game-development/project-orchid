@@ -56,7 +56,7 @@ public class Unit : Entity {
     {
         base.Start();
 
-        if(null != m_source && null != m_destination) {
+        if(m_source != null && m_destination != null) {
             SetSourceAndTarget(m_source, m_destination);
         }
 
@@ -116,7 +116,13 @@ public class Unit : Entity {
 
         Vector2 direction = m_destination.position - m_source.position;
         gameObject.GetComponent<Rigidbody2D>().velocity = direction.normalized * velocity;
+        if(m_owner == Faction.PLAYER){
+            Debug.LogWarning(gameObject.name + " transform up before " + transform.up);
+        }
         transform.LookAt(destination.gameObject.transform, transform.up);
+        if(m_owner == Faction.PLAYER){
+            Debug.LogWarning(gameObject.name + " transform up after " + transform.up);
+        }
         transform.Rotate(0 , -90, 0);
         transform.position = transform.position + new Vector3(0 , 0, -2);
     }
@@ -186,7 +192,7 @@ public class Unit : Entity {
     //called to give money back to player and destroy game object.
     public void FinishMission(){
         if(m_reachedDestination){
-            source.UnitReturned(m_money);
+            source.UnitReturned(m_reward);
             Destroy(gameObject);
         }
     }
