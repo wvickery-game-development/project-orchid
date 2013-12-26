@@ -192,7 +192,7 @@ public class Unit : Entity {
     //called to give money back to player and destroy game object.
     public void FinishMission(){
         if(m_reachedDestination){
-            source.UnitReturned(m_reward);
+            source.UnitReturned(m_money);
             Destroy(gameObject);
         }
     }

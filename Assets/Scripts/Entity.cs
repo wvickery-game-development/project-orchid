@@ -11,7 +11,7 @@ public class Entity : MonoBehaviour {
     public ExplosionGroup m_explosion;
 
 	public Faction m_owner = Faction.ENEMY;
-	public int m_hp, m_damage, m_reward;
+	public int m_hp, m_damage, m_money;
 	private bool m_rewardGiven = false; //TODO this should go
     public enum Type {bomber, fighter, icbm, point};
     public Type m_type;
@@ -37,7 +37,7 @@ public class Entity : MonoBehaviour {
 		get { return m_type; }
 	}
     public int money {
-		get { return m_reward; }
+		get { return m_money; }
 	}	
     public Vector2 position {
         get { return transform.position; }
@@ -82,10 +82,10 @@ public class Entity : MonoBehaviour {
 			
 			AudioSource.PlayClipAtPoint(m_destructionSound, this.transform.position,0.6f);
 			if(m_owner == Faction.PLAYER) {
-				State.EnemyMoney += m_reward;
+				State.EnemyMoney += m_money;
             } else {
-				State.PlayerMoney += m_reward;
-				m_moneyEffect.StartEffect(m_reward);
+				State.PlayerMoney += m_money;
+				m_moneyEffect.StartEffect(m_money);
 			}
 			
 			// Explosion!

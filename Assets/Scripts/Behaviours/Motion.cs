@@ -6,14 +6,16 @@ public class Motion : MonoBehaviour {
     ///////////////////////////
     //Motion Specific Constants
     ///////////////////////////
+    public float accuracyDistance = 0.5f;
     public enum MotionType { LINEAR };
 
     //////////////
     //Data Members
     //////////////
-    public MotionType type;
-    public float velocity;
-    public Vector2 m_source, m_destination;
+    public MotionType type = MotionType.LINEAR;
+    public float velocity = 10.0f;
+    private Vector2 m_source = new Vector2(0, 0);
+    private Vector2 m_destination = new Vector2(30, 30);
 
     ///////////////////
     //Public Properties
@@ -36,27 +38,47 @@ public class Motion : MonoBehaviour {
         }
     }
 
+    public Vector2 Position {
+        get {
+            return  new Vector2(transform.position.x, transform.position.y);
+        }
+    }
+
 
     /////////
     //Methods
     /////////
 	void Awake () {
+        //add the rigid body component if it hasn't been added already
         if(gameObject.GetComponent<Rigidbody2D>() == null){
             Rigidbody2D rbComponent = gameObject.AddComponent<Rigidbody2D>();
             rbComponent.isKinematic = false;
             rbComponent.fixedAngle = true;
             rbComponent.gravityScale = 0f;
         }
+
+        m_source = Position;
     }
 	
-	// Update is called once per frame
 	void Update () {
+        if(Vector2.Distance(Position, m_destination) < accuracyDistance){
+            ReverseCourse();
+        }
 	}
 
     void FixedUpdate () {
-	    transform.LookAt(m_destination, transform.up);
-        transform.Rotate(0 , -90, 0);   
+	    LookAtDestination();
      
         rigidbody2D.velocity = velocity * transform.right;
+    }
+
+    void LookAtDestination () {
+        float degreesChange = Vector2.Angle(transform.right, (m_destination - Position).normalized);
+        transform.Rotate(Vector3.forward * degreesChange);
+    }
+    void ReverseCourse() {
+        Vector2 oldDestination = m_destination;
+        m_destination = m_source;
+        m_source = oldDestination;
     }
 }
