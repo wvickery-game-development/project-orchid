@@ -371,7 +371,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &31519056
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!114 &91434532
@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &133733869
@@ -1199,7 +1199,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &144674805
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &211303831
 BoxCollider2D:
@@ -1792,7 +1792,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &228853429
 BoxCollider2D:
@@ -1971,7 +1971,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &237049098
@@ -2099,7 +2099,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &239869731
@@ -2295,7 +2295,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!1001 &251474943
 Prefab:
@@ -2633,7 +2633,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &314978355
 BoxCollider2D:
@@ -2932,7 +2932,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &358873770
@@ -3060,7 +3060,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &359046345
@@ -3188,7 +3188,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &369368791
@@ -3424,7 +3424,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &394165530
@@ -3604,7 +3604,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &401750765
@@ -3770,7 +3770,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &407392131
 BoxCollider2D:
@@ -3952,7 +3952,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &422284093
 BoxCollider2D:
@@ -4200,7 +4200,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &431007349
@@ -4366,7 +4366,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &448429488
 BoxCollider2D:
@@ -4479,7 +4479,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &450434181
 BoxCollider2D:
@@ -4707,7 +4707,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &488131419
@@ -4835,7 +4835,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &490427603
@@ -4963,7 +4963,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &504626903
@@ -5091,7 +5091,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &505975764
@@ -5205,7 +5205,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &508809727
 BoxCollider2D:
@@ -5607,7 +5607,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &549573893
@@ -5735,7 +5735,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &551074960
@@ -5863,7 +5863,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &556996843
@@ -5991,7 +5991,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &563013142
@@ -6153,7 +6153,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &563831359
 BoxCollider2D:
@@ -6384,7 +6384,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &607630969
@@ -6499,7 +6499,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &609772682
 BoxCollider2D:
@@ -6847,7 +6847,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &653236879
@@ -7079,7 +7079,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &665483228
@@ -7305,7 +7305,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &683219217
@@ -7433,7 +7433,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &689126150
@@ -7613,7 +7613,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &707443844
@@ -7901,7 +7901,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &786783892
@@ -8029,7 +8029,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &811262893
@@ -8157,7 +8157,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &813543704
@@ -8337,7 +8337,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &833897192
@@ -8465,7 +8465,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!61 &836014170
@@ -8593,7 +8593,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &846557809
@@ -8863,7 +8863,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &937762118
 BoxCollider2D:
@@ -9094,7 +9094,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &950541379
@@ -9382,7 +9382,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1005124100
@@ -9594,7 +9594,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1022747363
@@ -9709,7 +9709,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1025051030
 BoxCollider2D:
@@ -10044,7 +10044,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!61 &1038347201
@@ -10451,7 +10451,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1089885858
@@ -10687,7 +10687,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1108578948
 BoxCollider2D:
@@ -10880,7 +10880,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1136056989
@@ -11071,7 +11071,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1144675768
 BoxCollider2D:
@@ -11198,7 +11198,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1145967192
@@ -11364,7 +11364,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1200998204
@@ -11569,7 +11569,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1240853274
 BoxCollider2D:
@@ -11867,7 +11867,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1264901699
@@ -12043,7 +12043,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1292958467
@@ -12171,7 +12171,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1296426213
@@ -12527,7 +12527,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1322520311
@@ -12655,7 +12655,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1329936382
@@ -12985,7 +12985,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1364198874
@@ -13100,7 +13100,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1366864913
 BoxCollider2D:
@@ -13392,7 +13392,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1375527641
@@ -13576,7 +13576,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1394124036
@@ -13704,7 +13704,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1408953051
@@ -14026,7 +14026,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1465892777
@@ -14154,7 +14154,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1468543965
@@ -14321,7 +14321,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1483048402
 BoxCollider2D:
@@ -14552,7 +14552,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1499819320
 BoxCollider2D:
@@ -14747,7 +14747,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!1 &1517669898
 GameObject:
@@ -14811,7 +14811,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1517669902
@@ -14939,7 +14939,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1523598860
@@ -15067,7 +15067,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1525348202
@@ -15243,7 +15243,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1536944905
@@ -15428,7 +15428,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &1549966698
 BoxCollider2D:
@@ -15731,7 +15731,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1575138744
@@ -15963,7 +15963,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!61 &1590013431
@@ -16203,7 +16203,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1599868397
@@ -16435,7 +16435,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1618695998
@@ -16563,7 +16563,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1619048787
@@ -16762,7 +16762,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1627794698
@@ -16946,7 +16946,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1635310791
@@ -17182,7 +17182,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1651134555
@@ -17362,7 +17362,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!61 &1696134907
@@ -17490,7 +17490,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1719619891
@@ -17618,7 +17618,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1725900187
@@ -17798,7 +17798,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1729139443
@@ -17926,7 +17926,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1739956593
@@ -18054,7 +18054,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1754570094
@@ -18210,7 +18210,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1793442396
@@ -18338,7 +18338,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1812413497
@@ -18495,7 +18495,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1831826459
@@ -18634,7 +18634,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 1
 --- !u!61 &1880151719
@@ -18762,7 +18762,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1887412742
@@ -18950,7 +18950,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1891890293
@@ -19246,7 +19246,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1938131148
@@ -19410,7 +19410,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1948381575
@@ -19629,7 +19629,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &1988685296
@@ -19921,7 +19921,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &2003708416
@@ -20109,7 +20109,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &2012806774
@@ -20224,7 +20224,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &2016294740
 BoxCollider2D:
@@ -20572,7 +20572,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &2036891115
 BoxCollider2D:
@@ -20817,7 +20817,7 @@ MonoBehaviour:
   m_owner: 0
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &2069374333
@@ -20945,7 +20945,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &2069869139
@@ -21182,7 +21182,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
   m_startActive: 0
 --- !u!61 &2088559788
@@ -21558,7 +21558,7 @@ MonoBehaviour:
   m_owner: 1
   m_hp: 0
   m_damage: 0
-  m_reward: 0
+  m_money: 0
   m_type: 3
 --- !u!61 &2136656039
 BoxCollider2D:
