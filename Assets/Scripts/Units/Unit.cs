@@ -98,7 +98,7 @@ public class Unit : Entity {
             {
                 Attack(m_attackTarget);
                 m_attackTimer.SetBack();
-                //m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
+                m_attackTimer.time = m_munition.attack_time + Random.Range(0, m_munition.attack_time_variance);
             }
         }
     }
@@ -154,8 +154,8 @@ public class Unit : Entity {
     {
         int damage = m_munition.damage;
 
-        Laser laser = new Laser(position, target.position, m_munition.colour);
-        StartCoroutine(laser.Fade());
+        //Laser laser = new Laser(position, target.position, m_munition.colour);
+        //StartCoroutine(laser.Fade());
 
         AudioSource.PlayClipAtPoint(m_shootSound,transform.position, Random.Range(0.01f,0.3f));
 

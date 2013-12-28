@@ -49,6 +49,10 @@ public class Health : MonoBehaviour {
         CheckHealth();
     }
 
+    public void TakeDamage(float damage) {
+        m_damage += damage;
+    }
+
     void CheckHealth() {
         if(CurrentHealth <= 0){
             Destroy(gameObject);
@@ -69,9 +73,5 @@ public class Health : MonoBehaviour {
             Color colour = new Color(1 - (CurrentHealth/maxHealth), (CurrentHealth/maxHealth),0 );
             m_healthBar.SetColors(colour, colour);
         }
-    }
-
-    void TakeDamage(float damage) {
-        m_damage += damage;
     }
 }

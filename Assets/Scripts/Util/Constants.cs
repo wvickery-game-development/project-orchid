@@ -7,5 +7,5 @@ public enum Faction {
 
 // List of types to check if X can attack Y
 public enum Type {
-    FIGHTER, BOMBER, ICMB, LOCATION
+    FIGHTER, BOMBER, ICBM, LOCATION
 }

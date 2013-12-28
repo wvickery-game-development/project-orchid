@@ -86,6 +86,8 @@ GameObject:
   - 23: {fileID: 327530414}
   - 114: {fileID: 327530413}
   - 114: {fileID: 327530417}
+  - 114: {fileID: 327530418}
+  - 114: {fileID: 327530419}
   m_Layer: 0
   m_Name: TestTarget
   m_TagString: Untagged
@@ -165,6 +167,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   showHealthBar: 1
+--- !u!114 &327530418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327530412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb99956c897a7c2479dff7006681ca53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faction: 1
+  type: 0
+--- !u!114 &327530419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327530412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe58196f72e22a45ab341856ad12b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 50
+  frequency: .300000012
+  variance: .100000001
+  damage: 1
 --- !u!1 &327865972
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,7 +206,9 @@ GameObject:
   - 33: {fileID: 327865977}
   - 23: {fileID: 327865976}
   - 114: {fileID: 327865975}
+  - 114: {fileID: 327865980}
   - 114: {fileID: 327865974}
+  - 114: {fileID: 327865979}
   - 114: {fileID: 327865973}
   m_Layer: 0
   m_Name: TestUnit
@@ -193,10 +225,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 327865972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffe58196f72e22a45ab341856ad12b5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 013b96b6eb314ad4eb713b12c7fb045e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRange: 20
+  maxHealth: 100
+  showHealthBar: 1
 --- !u!114 &327865974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +303,34 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &327865979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327865972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe58196f72e22a45ab341856ad12b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: 50
+  frequency: .300000012
+  variance: .100000001
+  damage: 1
+--- !u!114 &327865980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 327865972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb99956c897a7c2479dff7006681ca53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faction: 0
+  type: 1
 --- !u!1 &772336313
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,7 +351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &772336314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,6 +463,44 @@ MonoBehaviour:
   m_damage: 0
   m_money: 0
   m_type: 3
+--- !u!1 &1105480657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1105480658}
+  - 114: {fileID: 1105480659}
+  m_Layer: 0
+  m_Name: LaserFactory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1105480658
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1105480657}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 60.3505516, y: 40.5433426, z: .048828125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &1105480659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1105480657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958e0885a1cb0c3428525479f0b1a305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1496393520
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,6 +665,10 @@ Prefab:
     - target: {fileID: 3300000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0be961d9146fbd641997aa1ee8914cb7, type: 2}
