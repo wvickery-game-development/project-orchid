@@ -6,14 +6,15 @@ public class Motion : MonoBehaviour {
     /////////////////////////////////////////////////////////////////////////////
     //Motion Specific Constants
     /////////////////////////////////////////////////////////////////////////////
-    public float accuracyDistance = 0.5f;
     public enum MotionType { LINEAR };
-
+    public enum ReturnType { ONEWAY, ROUNTRIP, LOOP };
     /////////////////////////////////////////////////////////////////////////////
     //Data Members
     /////////////////////////////////////////////////////////////////////////////
-    public MotionType type = MotionType.LINEAR;
+    public MotionType motionType = MotionType.LINEAR;
+    public ReturnType returnType = ReturnType.ROUNTRIP;
     public float velocity = 10.0f;
+    public float accuracyDistance = 0.5f;
     private Vector2 m_source = new Vector2(0, 0);
     private Vector2 m_destination = new Vector2(110, 100);
 
@@ -62,7 +63,23 @@ public class Motion : MonoBehaviour {
 	
 	void Update () {
         if(Vector2.Distance(Position, m_destination) < accuracyDistance){
-            ReverseCourse();
+            switch (returnType)
+            {
+                case ReturnType.ONEWAY:
+                    //want to call some , hey what should i do now
+                    //destroy for now
+                    Destroy(gameObject);
+                    break;
+                case ReturnType.ROUNTRIP:
+                    returnType = ReturnType.ONEWAY;
+                    ReverseCourse();
+                    break;
+                case ReturnType.LOOP:
+                    ReverseCourse();
+                    break;
+                default:
+                    break;
+            }
         }
 	}
 
@@ -76,6 +93,7 @@ public class Motion : MonoBehaviour {
         float degreesChange = Vector2.Angle(transform.right, (m_destination - Position).normalized);
         transform.Rotate(Vector3.forward * degreesChange);
     }
+
     void ReverseCourse() {
         Vector2 oldDestination = m_destination;
         m_destination = m_source;

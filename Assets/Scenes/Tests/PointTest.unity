@@ -241,9 +241,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f903c46ee32c343b3139990bb5c0e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accuracyDistance: .5
-  type: 0
+  motionType: 0
+  returnType: 1
   velocity: 50
+  accuracyDistance: .5
 --- !u!114 &327865975
 MonoBehaviour:
   m_ObjectHideFlags: 0
